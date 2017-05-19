@@ -22,9 +22,8 @@ module.exports = {
     jquery: {
       root: '$'
     },
-    'cornerstone-math': {
-      root: 'cornerstoneMath'
-    }
+    'cornerstone': 'cornerstone',
+    'cornerstone-math': 'cornerstoneMath'
   },
   module: {
     rules: [{
