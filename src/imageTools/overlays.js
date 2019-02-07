@@ -11,7 +11,7 @@ function onImageRendered (e) {
 
   const enabledElement = eventData.enabledElement;
   const context = enabledElement.canvas.getContext('2d');
-  const overlays = eventData.image.overlays;
+  const overlays = external.cornerstone.metaData.get('overlayPlaneModule', eventData.image.imageId);
 
   const imageWidth = Math.abs(enabledElement.viewport.displayedArea.brhc.x - enabledElement.viewport.displayedArea.tlhc.x) * enabledElement.viewport.displayedArea.columnPixelSpacing;
   const imageHeight = Math.abs(enabledElement.viewport.displayedArea.brhc.y - enabledElement.viewport.displayedArea.tlhc.y) * enabledElement.viewport.displayedArea.rowPixelSpacing;
